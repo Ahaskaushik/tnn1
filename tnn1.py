@@ -22,4 +22,4 @@ embeddings_freq=1)]
 model.fit(x,y,epochs=5,batch_size=10,callbacks=callbacks)
 model.save('m1.hs')
 _,acc=model.evaluate(x,y)
-print("The accuracy of the model is:",acc)
+print("The accuracy of the model is:%.2f"%acc)
